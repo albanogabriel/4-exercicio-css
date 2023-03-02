@@ -40,6 +40,7 @@ Header
 }
 
 section .articles {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -129,4 +130,20 @@ section h2 {
 
 #economy .articles article a{
     background-color: rgb(212, 138, 0);
+}
+
+#entretenimento {
+    background-color: rgb(238, 205, 213);
+}
+
+#entretenimento .articles article a{
+    background-color: rgb(148, 12, 12);
+}
+
+#tecnologia {
+    background-color: rgb(230, 185, 122);
+}
+
+#tecnologia .articles article a{
+    background-color: rgb(145, 91, 16);
 }
