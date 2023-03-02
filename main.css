@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ body > header {
+    background-color: #2f3640;
+    padding: 16px 0px;
+    color: #f5f6fa;
+    /* Body ">" header - Editar o filho direto do body que neste caso é o header */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; - alinhar titúlos com o menu */
+    /* justify-content: space-between; - queremos que o h1(Meu portal de notícias) e o links(a)(Esportes e  Economia) estejam em lados opostos*/
+}
+
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+    /* Coloca diversos elementos na mesma linha, até elementos que tem características de ocuparem a linha toda, por exemplo blocos ou espaços */
+}
+
+header li a {
+    color:#f5f6fa;
+    text-decoration: none;
+
+}
+
+Header
+    .container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+section .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Display:flex -  (Organiza os conteúdos um ao lado do outro) ao invés de cada artigo ocupar uma linha, ele é distribuído mais de "article" em cada linha "3" neste exemplo*/
+    /* flex-wrap: wrap ; - ao dicionar 4 artigos, o flex wrap é utilizado para quebrar o 4º article e manda-lo para a linha de baixo  */
+    /* justify-content: space-between; - Espaço igualitário distribuído entre os itens(Articles) */
+ }
+
+ .articles article img {
+    /* height: 180px; */
+    width: 100%;
+ }
+
+ .articles article {
+    width: 30%;
+        /* width - a tela é composta por 100% da tela, ou seja, cada "article" vai ocupar 30% da tela, se forem 3 por linha, vai sobrar 10% de espaço que podem ser usados como margem*/
+ }
+
+ /* #dolares { 
+    position: fixed;
+    right: 0;
+/* position: fixed; - Fixar a img na tela  */
+/* Right: 0 - Lugar da tela  */
+
+
+section {
+    padding: 16px 0px;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+/* margin-bottom: Está dizendo que quer um espaçamento inferior entre título  "Esportes" e Imagem */
+/* .articles article: está dizendo que quer também reaproveitar esse estilo para a classe articles que está dentro do article */
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block; 
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 8px;
+    
+    /* display: o elemento a por padrão, é um elemento que possui a propriedade do display inline, adiciona a quebra*/
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p, 
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* RGBA - Red, Green, Blue, Alpha(Transparency). 0-255 é o limite */
+
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f6af;
+}
+
+#economy .articles article a{
+    background-color: rgb(212, 138, 0);
+}
